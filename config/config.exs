@@ -1,7 +1,7 @@
 use Mix.Config
 
-config :bro,
-  ecto_repos: [Bro.Repo]
+config :bro, ecto_repos: [Bro.Repo]
+config :comeonin, :bcrypt_log_rounds, 4
 
 config :bro, Bro.Endpoint,
   url: [host: "localhost"],
