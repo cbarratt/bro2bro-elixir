@@ -7,8 +7,7 @@ config :bro, Bro.Endpoint,
   http: [port: 4000],
   debug_errors: false,
   code_reloader: true,
-  check_origin: false,
-  watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin"]]
+  check_origin: false
 
 config :bro, Bro.Repo,
   adapter: Ecto.Adapters.Postgres,

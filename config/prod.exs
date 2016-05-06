@@ -7,7 +7,7 @@ config :bro, Bro.Endpoint,
   url: [host: "example.com", port: 80],
   cache_static_manifest: "priv/static/manifest.json"
 
-config :blackjack, Bro.Repo,
+config :bro, Bro.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: {:system, "DATABASE_URL"},
   pool_size: 20
