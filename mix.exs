@@ -18,8 +18,17 @@ defmodule Bro.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {Bro, []},
-     applications: [:phoenix, :phoenix_pubsub, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+      applications: [
+        :phoenix,
+        :phoenix_pubsub,
+        :cowboy,
+        :logger,
+        :gettext,
+        :phoenix_ecto,
+        :postgrex,
+        :comeonin
+      ]
+    ]
   end
 
   # Specifies which paths to compile per environment.
@@ -37,7 +46,9 @@ defmodule Bro.Mixfile do
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:cors_plug, "~> 1.1"}
+      {:cors_plug, "~> 1.1"},
+      {:comeonin, "~> 2.4"},
+      {:guardian, git: "git@github.com:ueberauth/guardian"}
     ]
   end
 

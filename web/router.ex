@@ -7,5 +7,9 @@ defmodule Bro.Router do
 
   scope "/api", Bro do
     pipe_through :api
+
+    scope "/v1" do
+      post "/registrations", RegistrationController, :create
+    end
   end
 end
