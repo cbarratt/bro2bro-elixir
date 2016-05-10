@@ -1,9 +1,10 @@
 defmodule Bro.UserView do
   use Bro.Web, :view
 
-  def render("users.json", %{user: user}) do
-    %{
-      username: user.username
-    }
+  def render("show.json", %{user: user}) do
+    user
+  end
+
+  def render("error.json", _) do
   end
 end
