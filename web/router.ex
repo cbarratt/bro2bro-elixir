@@ -12,10 +12,13 @@ defmodule Bro.Router do
 
     scope "/v1" do
       post "/registrations", RegistrationController, :create
+
       post "/sessions", SessionController, :create
       delete "/sessions", SessionController, :delete
 
       get "/user", UserController, :show
+
+      get "/bros", BrosController, :index
     end
   end
 end
