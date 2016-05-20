@@ -9,7 +9,7 @@ defmodule Bro.SessionView do
   end
 
   def render("error.json", _) do
-    %{error: "Invalid email or password"}
+    %{error: "Invalid email address or password"}
   end
 
   def render("delete.json", _) do
